@@ -4,6 +4,15 @@ import React from "react";
 import { Alert, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { auth } from "../../constants/firebaseConfig";
 
+// 🎨 You can change your color theme here
+const COLORS = {
+  background: "#F6F9FF",   // screen background
+  heading: "#1E3A8A",      // heading text
+  subText: "#475569",      // paragraph text
+  button: "#2563EB",       // button background
+  buttonText: "#FFFFFF",   // button text color
+};
+
 export default function HomeScreen() {
   const router = useRouter();
 
@@ -42,7 +51,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
-    backgroundColor: "#F6F9FF",
+    backgroundColor: COLORS.background, // 👈 change here
     justifyContent: "center",
     alignItems: "center",
     padding: 25,
@@ -50,7 +59,7 @@ const styles = StyleSheet.create({
   heading: {
     fontSize: 28,
     fontWeight: "700",
-    color: "#1E3A8A",
+    color: COLORS.heading, // 👈 change here
     marginBottom: 15,
   },
   avatar: {
@@ -62,19 +71,19 @@ const styles = StyleSheet.create({
   subText: {
     textAlign: "center",
     fontSize: 15,
-    color: "#475569",
+    color: COLORS.subText, // 👈 change here
     marginBottom: 25,
     lineHeight: 22,
   },
   logoutBtn: {
-    backgroundColor: "#2563EB",
+    backgroundColor: COLORS.button, // 👈 change here
     paddingVertical: 12,
     paddingHorizontal: 30,
     borderRadius: 10,
     elevation: 3,
   },
   logoutText: {
-    color: "white",
+    color: COLORS.buttonText, // 👈 change here
     fontSize: 16,
     fontWeight: "bold",
     letterSpacing: 0.5,

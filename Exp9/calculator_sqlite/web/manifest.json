@@ -1,6 +1,6 @@
 {
-    "name": "calculator_app",
-    "short_name": "calculator_app",
+    "name": "calculator_sqlite",
+    "short_name": "calculator_sqlite",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

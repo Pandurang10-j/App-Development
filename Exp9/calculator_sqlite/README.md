@@ -1,4 +1,4 @@
-# calculator_app
+# calculator_sqlite
 
 A new Flutter project.
 
